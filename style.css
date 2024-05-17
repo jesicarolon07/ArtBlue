@@ -1,0 +1,162 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+.menu {
+    color: #383737;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+	height: 70px;
+	background: #fff;
+   
+}
+
+
+.logo{
+	font-family: 'Kanit', sans-serif;
+	font-size: 24px;
+	display: flex;
+width: 285px;
+height: 48px;
+justify-content: center;
+align-items: center;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+padding: 16px 20px;
+text-align: center;
+}
+
+.menu-options {
+    display: flex;
+    gap: 10px;
+width: 238px;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.menu-options  :hover{
+    background:#25538f;
+color: #FFFFFF;
+}
+.menu-options a {
+    color: #423f3f;
+    text-decoration: none;
+    height: 70px;
+    padding: 20px;
+}
+
+
+
+.Mensaje{
+    align-items: center;
+    text-align: start;
+    width: 50%;
+    height: 30%;
+   border: 1px solid #000;
+   background: rgba(57, 55, 55, 0.2);
+    padding: 5%;
+    
+}
+form{
+    background-image: url('img/gggggggggggggggggggggggg.PNG');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10%;
+    color: #fff;
+}
+.button{
+    padding: 20%;
+    text-align: center;
+}
+button{
+    width: 50%;
+    height: 50%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px; /* Espaciado interno del footer */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    background:#342E2E;
+}
+
+.footer-item {
+    padding: 0 5px; /* Espaciado entre elementos del footer */
+}
+
+.footer-item img {
+    max-width: 20%; /* Ajustar el tamaño máximo de las imágenes */
+}
+
+.footer-text {
+    text-align: center; /* Centrar el texto del párrafo */
+    width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+    padding-top: 10px; /* Espaciado superior para separar el párrafo de las imágenes */
+    color: #F9F9F9;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu-options {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+		color: #000000;
+    }
+    .main-content{
+        font-size: 15px;
+    }
+    .menu{
+        background: rgba(149, 148, 148, 0.482);
+    }
+    
+    button{
+        width: 85%;
+        height: 85%;
+
+    }
+    .Mensaje{
+
+        width: 100%;
+        height: 30%;
+    }
+    .footer-item {
+        flex: 0 0 100%; /* Establecer ancho completo para cada elemento en dispositivos móviles */
+        margin-bottom: 10px; /* Espaciado inferior entre elementos en dispositivos móviles */
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px; /* Espaciado interno del footer */
+        justify-content: center; /* Centrar los elementos horizontalmente */
+    }
+
+
+    form{
+        background-image: url('img/Diseño\ sin\ título\ \(4\)\ 2.png');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 30%;
+        color: #fff;
+    }
+
+  
+}
